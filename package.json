@@ -1,0 +1,28 @@
+{
+  "name": "mongo_recursive_camelcase",
+  "version": "1.0.1",
+  "description": "Library for creating recursive camelcase keys for MongoDB data",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/landlight/mongo_recursive_camelcase.git"
+  },
+  "keywords": [
+    "camelcase",
+    "mongodb",
+    "recursive"
+  ],
+  "author": "Chit Khine",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/landlight/mongo_recursive_camelcase/issues"
+  },
+  "homepage": "https://github.com/landlight/mongo_recursive_camelcase#readme",
+  "dependencies": {
+    "lodash": "^4.17.15",
+    "mongodb": "^3.5.9"
+  }
+}
