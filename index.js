@@ -49,20 +49,27 @@ const mongoCamel = function (o) {
         const n = {};
         Object.keys(o)
             .forEach((k) => {
-            n[toCamel(k)] = mongoCamel
-    (o[k]);
+                n[toCamel(k)] = mongoCamel(o[k]);
             });
         return n;
       }
     } else if (isArray(o)) {
       return o.map((i) => {
-        return mongoCamel
-(i);
+        return mongoCamel(i);
       });
     }  
     return o;
 };
 
+const mongoCamelString = (stringInput) => {
+    if (stringInput.length > 0) {
+        return toCamel(stringInput);
+    } else {
+        return "";
+    }
+}   
+
 module.exports = {
-    mongoCamel
+    mongoCamel, 
+    mongoCamelString
 }
